@@ -47,6 +47,15 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 -------------------------------------------------------------- */
 
+
+/*==== new css======== */
+.hero_title{
+  margin-right: 750px;
+}
+
+/*==== new css======== */
+
+
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
@@ -115,18 +124,31 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--primaryThemeColour);
 }
 
+/* New css  */
+@media (max-width: 1200px) {
+  .hero_title{
+    margin-right: 500px;
+  }
+}
+@media (max-width: 992px) {
+  #header h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hero_title{
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+/* New css  */
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
   }
 }
 
-@media (max-width: 992px) {
-  #header h2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
+
 
 @media (max-width: 992px) {
   #header .social-links {
