@@ -53,6 +53,7 @@
   on('click', '#navbar .nav-link', function(e) {
     let section = select(this.hash)
     if (section) {
+      e.preventDefault()
 
       let navbar = select('#navbar')
       let header = select('#header')

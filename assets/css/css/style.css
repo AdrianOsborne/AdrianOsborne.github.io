@@ -148,8 +148,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-
 @media (max-width: 992px) {
   #header .social-links {
     margin-top: 15px;
@@ -968,13 +966,13 @@ hr {
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
+  top: 0;
+  left: 0;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
+  bottom: 0;
+  right: 0;
 }
 
 .portfolio-title-overlay {
