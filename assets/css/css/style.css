@@ -979,6 +979,7 @@ hr {
 
 .portfolio-title-overlay {
   position: absolute;
+  opacity: 1 !important;
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -1012,6 +1013,35 @@ hr {
   width: 100%;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-wrap::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0 !important;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 1 !important;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info::before {
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info::after {
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+
+  .portfolio-title-overlay {
+    opacity: 0 !important;
+  }
+}
+
 
 /* --------------------------------------------------------------
 # Portfolio Details
