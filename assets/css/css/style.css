@@ -714,6 +714,31 @@ hr {
   border: 2px solid var(--primaryThemeColour);
 }
 
+.view-resume-btn {
+  position: relative !important;
+  display: inline-block;
+  width: auto;
+  background-color: var(--primaryThemeColour);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-resume-btn:hover {
+  background-color: var(--secondaryThemecolour);
+}
+
+@media (max-width: 768px) {
+  .mobile-button {
+      text-align: center;
+      margin-top: 10px;
+  }
+}
+
 /* --------------------------------------------------------------
 # Services
 -------------------------------------------------------------- */
@@ -1290,7 +1315,7 @@ hr {
 
 @media (max-width: 768px) {
   .resumepdf .resumepdf-document iframe {
-      height: 400px;
+      height: 100px;
   }
   
 }
