@@ -952,6 +952,42 @@ hr {
   right: 15px;
 }
 
+.portfolio-title-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
+.portfolio-date-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
+.portfolio-year-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio-year-wrap {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /* --------------------------------------------------------------
 # Portfolio Details
 -------------------------------------------------------------- */
@@ -1211,3 +1247,116 @@ hr {
   color: #fff;
 }
 
+/* --------------------------------------------------------------
+# Resume PDF Page Styling
+-------------------------------------------------------------- */
+
+.resumepdf {
+  position: relative !important;
+  width: 100% !important;
+  opacity: 1 !important;
+  top: 0 !important;
+  bottom: auto !important;
+  padding-bottom: 45px !important;
+  margin-top: 50px;
+}
+
+.resumepdf .resumepdf-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resumepdf .resumepdf-document {
+  width: 100%;
+  max-width: 1500px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.resumepdf .resumepdf-document iframe {
+  border: none;
+  width: 100%;
+  height: 800px;
+}
+
+.resumepdf .updated-date {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .resumepdf .resumepdf-document iframe {
+      height: 400px;
+  }
+  
+}
+
+/* --------------------------------------------------------------
+# QR Landing Page Styling
+-------------------------------------------------------------- */
+#quicklinks {
+  position: relative !important;
+  width: 100% !important;
+  opacity: 1 !important;
+  top: 0 !important;
+  padding: 45px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.qr-landing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.qr-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primaryThemeColour);
+}
+
+.qr-link i {
+  font-size: 24px;
+  color: var(--primaryThemeColour); /* Match theme */
+}
+
+.qr-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--secondaryThemecolour);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  #quicklinks {
+    top: 100px !important;
+  }
+
+  #quicklinks p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #quicklinks h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}

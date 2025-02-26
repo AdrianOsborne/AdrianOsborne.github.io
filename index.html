@@ -214,7 +214,11 @@
         </div>
     </section>
     <section id="resume" class="resume">
-        <div class="container">
+        <div class="container" style="position: relative;">
+            <a href="resume.html" class="btn view-resume-btn" 
+                style="position: absolute; right: 20px; top: 20px; background-color: #d21818; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+                View Resume PDF
+            </a>
             <div class="section-title">
                 <h2>Resume</h2>
                 <p>Check My Resume</p>
@@ -418,46 +422,82 @@
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-project">Project</li>
                         <li data-filter=".filter-app">Application</li>
                         <li data-filter=".filter-game">Game</li>
-                        <!--<li data-filter=".filter-other">Other</li>-->
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-md-6 col-lg-4 portfolio-item filter-game">
-                    <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/dejavu.webp" alt="">
-                        <div class="portfolio-info">
-                            <h4>The Dungeon of Deja Vu</h4>
-                            <p>Game</p>
-                            <div class="portfolio-links"><a href="dungeonofdejavu.html"
-                                    data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                                    class="portfolio-details-lightbox" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 portfolio-item filter-game">
-                    <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/farming.webp" alt="">
-                        <div class="portfolio-info">
-                            <h4>The Farmer's Curse</h4>
-                            <p>Game</p>
-                            <div class="portfolio-links"><a href="farmerscurse.html"
-                                    data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                                    class="portfolio-details-lightbox" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a></div>
-                        </div>
+                <!-- Year Blocks that follow filtering -->
+                <div class="col-12 portfolio-item filter-app filter-game filter-project">
+                    <div class="portfolio-year-wrap">
+                        <p class="portfolio-year">2022</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 portfolio-item filter-app">
-                    <div class="portfolio-wrap"><img class="img-fluid" src="assets/img/portfolio/cracked.webp" alt="">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-title-overlay">
+                            <h4 class="portfolio-name">Cracked</h4>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/cracked.webp" alt="">
+                        <div class="portfolio-date-overlay">
+                            <p class="portfolio-date">22nd June, 2022</p>
+                        </div>
                         <div class="portfolio-info">
-                            <h4>Cracked</h4>
-                            <p>Application</p>
-                            <div class="portfolio-links"><a href="cracked.html"
-                                    data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                                    class="portfolio-details-lightbox" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a></div>
+                            <p>Cracked</p>
+                            <div class="portfolio-links">
+                                <a href="cracked.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                                    class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 portfolio-item filter-app filter-game filter-project">
+                    <div class="portfolio-year-wrap">
+                        <p class="portfolio-year">2021</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item filter-game">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-title-overlay">
+                            <h4 class="portfolio-name">The Farmer's Curse</h4>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/farming.webp" alt="">
+                        <div class="portfolio-date-overlay">
+                            <p class="portfolio-date">13th August, 2021</p>
+                        </div>
+                        <div class="portfolio-info">
+                            <p>The Farmer's Curse</p>
+                            <div class="portfolio-links">
+                                <a href="farmerscurse.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                                    class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 portfolio-item filter-app filter-game filter-project">
+                    <div class="portfolio-year-wrap">
+                        <p class="portfolio-year">2020</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item filter-game">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-title-overlay">
+                            <h4 class="portfolio-name">The Dungeon of Deja Vu</h4>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/dejavu.webp" alt="">
+                        <div class="portfolio-date-overlay">
+                            <p class="portfolio-date">8th August, 2020</p>
+                        </div>
+                        <div class="portfolio-info">
+                            <p>The Dungeon of Deja Vu</p>
+                            <div class="portfolio-links">
+                                <a href="dungeonofdejavu.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                                    class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -473,14 +513,14 @@
                 <div class="col-md-6 d-flex align-items-stretch mt-4">
                     <div class="info-box"><i class="bx bx-envelope"></i>
                         <h3>Email Me</h3>
-                        <p>adrian.b.osborne.business@gmail.com</p>
+                        <p>adrianosbornejob@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-stretch mt-4">
                     <div class="info-box"><i class='bx bxl-linkedin-square'></i>
                         <h3>Connect on LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/adrian-osborne-1b8ab12b2/" target="_blank">
-                            <p>https://www.linkedin.com/in/adrian-osborne-1b8ab12b2/</p>
+                        <a href="https://www.linkedin.com/in/adrianbosborne/" target="_blank">
+                            <p>https://www.linkedin.com/in/adrianbosborne/</p>
                         </a>
                     </div>
                 </div>
